@@ -46,7 +46,7 @@ const ImageSlide = ({ path }) => (
       <img
         src={`/images/${path}`}
         alt="Slide"
-        className="w-full h-auto rounded-lg shadow-lg 
+        className="w-full h-auto rounded-lg shadow-lg bg-[#ff9b9b]
                    object-cover animate-scale-in
                    hover:scale-105 transition-transform duration-300"
         loading="lazy"
