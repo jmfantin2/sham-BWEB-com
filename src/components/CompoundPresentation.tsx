@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight, FaRedo } from 'react-icons/fa';
 
 // Componente do botão de navegação
@@ -138,6 +138,18 @@ const OrionBeltSlide = () => (
 
 // Componente principal
 const CompoundPresentation = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay for demonstration purposes
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1633); // Adjust the delay as needed
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []); //todo: loading context instead of useState() so i can hide anything that might go overflow-y while RingLoader is there x_x (TransactionSimulation)
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -206,6 +218,8 @@ const CompoundPresentation = () => {
   const goToFirstSlide = () => {
     setCurrentSlide(0);
   };
+
+  if (loading) return null;
 
   return (
     <div className="relative w-full">
