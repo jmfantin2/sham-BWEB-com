@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaRedo } from 'react-icons/fa';
 
 // Componente do botão de navegação
 const NavButton = ({ direction, onClick, disabled }) => (
@@ -21,8 +21,10 @@ const NavButton = ({ direction, onClick, disabled }) => (
   >
     {direction === 'left' ? (
       <FaChevronLeft size={24} />
-    ) : (
+    ) : direction === 'right' ? (
       <FaChevronRight size={24} />
+    ) : (
+      <FaRedo size={24} />
     )}
   </button>
 );
@@ -201,6 +203,10 @@ const CompoundPresentation = () => {
     }
   };
 
+  const goToFirstSlide = () => {
+    setCurrentSlide(0);
+  };
+
   return (
     <div className="relative w-full">
       <div className="min-h-screen flex items-center justify-center">
@@ -212,11 +218,11 @@ const CompoundPresentation = () => {
         onClick={goToPrevSlide}
         disabled={currentSlide === 0}
       />
-      <NavButton
-        direction="right"
-        onClick={goToNextSlide}
-        disabled={currentSlide === slides.length - 1}
-      />
+      {currentSlide !== slides.length - 1 ? (
+        <NavButton direction="right" onClick={goToNextSlide} />
+      ) : (
+        <NavButton direction="redo" onClick={goToFirstSlide} />
+      )}
     </div>
   );
 };
