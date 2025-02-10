@@ -26,7 +26,7 @@ export function RingLoader({ mode }: RingLoaderProps) {
       return (
         loading && (
           <>
-            <div className="rounded-2xl absolute flex justify-center items-center bg-[#e8e8e8] dark:bg-IRON h-full w-full z-30">
+            <div className="rounded-2xl absolute flex justify-center items-center bg-[#e8e8e8] dark:bg-IRON min-h-screen w-full z-30">
               <ImSpinner9
                 className="fixed text-[#f43257] animate-spin z-10"
                 size={100}
