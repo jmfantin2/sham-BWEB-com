@@ -164,43 +164,55 @@ const CompoundPresentation = () => {
     </TextSlide>,
     <ImageSlide key={4} path="crestani.jpg" />,
     <TextSlide key={5}>It was a cold day, and life felt a bit gray.</TextSlide>,
-    <TextSlide key={6}>
-      But then, someone named Elle reached out, and I thought she was a bored
-      european.
-    </TextSlide>,
+    <TextSlide key={6}>But then, someone named Elle reached out,</TextSlide>,
     <TextSlide key={7}>
-      It was like a friendly petal fell in front of my eyes.
+      and initially I thought she was a bored girl from a first world country.
     </TextSlide>,
-    <PetalSlide key={8} />,
+    <TextSlide key={8}>I didn't know her face,</TextSlide>,
     <TextSlide key={9}>
-      From the start I felt like I could say anything to her.
+      so talking to her felt like watching the slow fall of a petal.
     </TextSlide>,
-    <TextSlide key={10}>And a completely novel feeling arose,</TextSlide>,
-    <TextSlide key={11}>swaying inside of me just like the petal.</TextSlide>,
-    <MoonSlide key={12} />,
-    <TextSlide key={13}>
+    <PetalSlide key={10} />,
+    <TextSlide key={11}>
+      Her sweetness made me feel like I could say anything to her.
+    </TextSlide>,
+    <TextSlide key={12}>And a completely novel feeling arose,</TextSlide>,
+    <TextSlide key={13}>swaying inside of me just like the petal.</TextSlide>,
+    <MoonSlide key={14} />,
+    <TextSlide key={15}>
       As we kept talking, I grew sure my prayers were answered,
     </TextSlide>,
-    <OrionBeltSlide key={14} />,
-    <TextSlide key={15}>
-      because I saw the shining of another person longing for true love, on the
-      other side.
+    <TextSlide key={16}>
+      because I saw her longing for true love, just like me.
     </TextSlide>,
-    <TextSlide key={16}>Like Rigel to Betelgeuse.</TextSlide>,
-    <OrionSlide key={17} />,
-    <TextSlide key={18}>And now...</TextSlide>,
-    <TextSlide key={19}>
+    <OrionBeltSlide key={17} />,
+    <TextSlide key={18}>
+      Complementary forces, in opposite locations.
+    </TextSlide>,
+    <TextSlide key={19}>Like Rigel to Betelgeuse.</TextSlide>,
+    <OrionSlide key={20} />,
+    <TextSlide key={21}>And now...</TextSlide>,
+    <TextSlide key={22}>
       Nothing is more important than crossing the space between.
     </TextSlide>,
-    <TextSlide key={20} color="blue">
+    <TextSlide key={23} color="blue">
       So I can feel Rigel's warmth 💙
     </TextSlide>,
-    <ImageSlide key={21} path="sham.jpg" />,
-    <TextSlide key={22}>Sham</TextSlide>,
-    <TextSlide key={23} color="blue">
+    <ImageSlide key={24} path="sham.jpg" />,
+    <TextSlide key={25}>Elle</TextSlide>,
+    <TextSlide key={26} color="blue">
+      7
+    </TextSlide>,
+    <TextSlide key={27}>Shaharah</TextSlide>,
+    <TextSlide key={28} color="blue">
+      OTRP 2024
+    </TextSlide>,
+    <TextSlide key={29}>Sham</TextSlide>,
+    <TextSlide key={30} color="blue">
       My Godsent
     </TextSlide>,
-    <TextSlide key={24}>Happy Valentine's 🌹</TextSlide>,
+    <TextSlide key={31}>Happy Valentine's 🌹</TextSlide>,
+    <TextSlide key={32}>"mahal kita."</TextSlide>,
   ];
 
   const goToNextSlide = () => {
